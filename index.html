@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="aqua">
+    <h1>Reservation Request</h1>
+    <form>
+        <fieldset>
+            <legend>General Information</legend>
+            <label for="Ad">Arrival Date</label>
+            <input type="date" name="Ad" id="Ad">
+            <br/>
+            <br/>
+
+            <label for="nights">Nights</label>
+            <input type="number" name="night" min="1"id="night"placeholder="Select Number of Nights>
+            <br/>
+            <br/>
+
+            <label for="adults">Adults</label>
+            <input type="number" name="adults" min="0" id="adults" placeholder="Select Number of Adults">
+
+            <br/>
+            <br/>
+
+            <label for="children">Children</label>
+            <input type="number" name="children" min="0" id="children" placeholder="Select Number of Children>
+            <br/>
+            <br/>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="rt">Room Type</label>
+            <input type="radio" name="rt" id="rt">Standard
+            <input type="radio" name="rt" id="rt">Business
+            <input type="radio" name="rt" id="rt">Suite
+            <br/>
+            <br/>
+
+            <label for="bt">Bed Type</label>
+            <input type="radio" name="bt" id="bt">King
+            <input type="radio" name="bt" id="bt">Double Double
+
+            <br/>
+            <br/>
+
+            <input type="checkbox" name="cb" id="cb">Smoking
+            <br/>
+            <br/>
+            <label for="fo">Food Options</label>
+            <select name="fo" id="fo">
+                <option value="fo">Veg</option>
+                <option value="fo">Non-Veg</option>
+                <option value="fo">Both</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" minlength="9" maxlength="20"placeholder="Enter Name"required>
+            <br/>
+            <br/>
+
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com" reqired>
+            <br/>
+            <br/>
+
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" pattern="[1-9]{1}[0-9]{9}" maxlength="10" required>
+            <br/>
+            <br/>
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" maxlength="20"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"required>
+            <br/>
+            <br/>
+        </fieldset>
+        <fieldset>
+            <legend>Distance Information</legend>
+            <label for="fm">Fuel Meter</label>
+            <meter id="fm" name="fm"  min="0" max="100" low="30" high="60" optimum="80" value="65"></meter>
+
+
+            <br/>
+            <br/>
+            <label for="pb">Progress Bar</label>
+            <progress  name="pb" id="pb" min="0" max="100" value="80"  ></progress>
+            <br/>
+            <br/>
+
+            <label for="pv">Write about the place of Visit:</label>
+            <br/>
+            <br/>
+
+            <textarea name="pv" id="pv" cols="40" rows="5" placeholder="Enter Your Paragraph" maxlength="100"></textarea>
+
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
+
+</body>
+</html>
